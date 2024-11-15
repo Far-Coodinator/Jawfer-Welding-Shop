@@ -1,5 +1,5 @@
 const ps = document.querySelector('.security input')
-const cpass = 'j123j'
+const cpass = 'jabj'
 const security = document.querySelector('#security')
 
 
