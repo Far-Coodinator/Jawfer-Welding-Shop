@@ -11,7 +11,7 @@ const raillingMenu = document.querySelector('#open-railling')
 
 // security script
 document.querySelector('#security-button').addEventListener('click',()=>{
-    const checkPS = ps.value.trim()
+    const checkPS = ps.value.trim().toLowerCase()
     if(checkPS===cpass){
         security.style.display = 'none'
         nav.style.display = 'block'
