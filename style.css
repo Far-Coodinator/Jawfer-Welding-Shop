@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --nav:white;
+    --nav-bg:rgba(49, 47, 47, 0.228);
+    --Dodger:rgba(47, 48, 49, 0.406);
+    --cadmium:rgba(227, 239, 222, 0.751);
+    --finBg:rgb(229,229,229);
+}
+body{
+    background: rgb(79,73,84);
+    background: -moz-linear-gradient(90deg, rgba(79,73,84,1) 0%, rgba(99,87,87,0.9613970588235294) 50%, rgba(171,169,167,0.9445903361344538) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(79,73,84,1) 0%, rgba(99,87,87,0.9613970588235294) 50%, rgba(171,169,167,0.9445903361344538) 100%);
+    background: linear-gradient(90deg, rgba(79,73,84,1) 0%, rgba(99,87,87,0.9613970588235294) 50%, rgba(171,169,167,0.9445903361344538) 100%);
+}
+
+.security{
+    
+    margin: 200px auto;
+}
+.security .heading{
+    text-align: center;
+    color: var(--finBg);
+}
+.security .heading span{
+    display: block;
+}
+
+.security .pera{
+    margin: 50px auto 10px auto;
+    text-align: center;
+    color: var(--cadmium);
+}
+.security input{
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    width: 40%;
+    padding: 5px 10px;
+}
+.security button{
+    display: block;
+    margin:10px auto;
+    font-size: 20px;
+    padding: 5px 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: greenyellow;
+    border-radius: 10px;
+    
+}
+
+#navBar{
+    display: none;
+}
+.navBar{
+    background-color: var(--nav-bg);
+
+}
+.navBar h1{
+    text-align: center;
+    color: var(--nav);
+    padding: 10px;
+}
+.grid{
+    display: none;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.grid .design-catogary{
+    background-color: var(--Dodger);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid img{
+    display: block;
+    width: 90%;
+    height: 80%;
+    margin: 5px auto 0 auto;
+}
+
+.grid .design-catogary .per{
+    text-align: center;
+    padding: 5px;
+    color: var(--cadmium);
+}
+
+#open-railling{
+    display: none;
+}
+.open-container figure{
+    margin: 10px;
+    background-color: var(--finBg);
+    padding-top: 10px;
+}
+
+.open-container img{
+    display: block;
+    margin:auto;
+    width: 90%;
+    height: 100%;
+}
+
+.open-container figure figcaption{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#close-button{
+    display: none;
+    transition: 0.5s;
+}
+.close ,.close img{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+}
