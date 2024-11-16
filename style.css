@@ -114,6 +114,7 @@ body{
 }
 
 #close-button{
+    cursor: pointer;
     display: none;
     transition: 0.5s;
 }
