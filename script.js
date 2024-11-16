@@ -6,7 +6,10 @@ const security = document.querySelector('#security')
 const nav = document.querySelector('#navBar')
 const gridMenu = document.querySelector('#grid')
 const closeBtn = document.querySelector('#close-button');
-const raillingMenu = document.querySelector('#open-railling')
+const raillingCatogory = document.querySelector('#open-railling')
+const gateCatogory = document.getElementById('open-gates')
+const windowCatogory = document.getElementById('open-window')
+const balconyCatogory = document.getElementById('open-balcony')
 
 
 // security script
@@ -23,24 +26,43 @@ document.querySelector('#security-button').addEventListener('click',()=>{
 
 // for Railling -design opening box
 document.querySelector("#iron-railling").addEventListener('click',()=>{
-    raillingMenu.style.display ='block'  
+    raillingCatogory.style.display ='block'  
+    hideMenu()
+})
+
+
+// for gate -design opening box
+document.querySelector('#iron-gate').addEventListener('click',()=>{
+    gateCatogory.style.display = 'block'
+    hideMenu()
+})
+
+// for window -design opening box
+document.querySelector('#iron-window').addEventListener('click',()=>{
+    windowCatogory.style.display = 'block'
+    hideMenu()
+})
+
+// for balcony  -design opening box
+document.getElementById('iron-balcony').addEventListener('click',()=>{
+    balconyCatogory.style.display = 'block'
     hideMenu()
 })
 
 
 
-
-
-
 // script for hide the menu 
 function hideMenu(){
-    closeBtn.style.display = 'block'
-    gridMenu.style.display = 'none'
+    closeBtn.style.display = 'block';
+    gridMenu.style.display = 'none';
 }
 function showmenu(){
-    closeBtn.style.display = 'none'
-    gridMenu.style.display = 'grid'
-    raillingMenu.style.display ='none'
+    closeBtn.style.display = 'none';
+    gridMenu.style.display = 'grid';
+    gateCatogory.style.display = 'none';
+    raillingCatogory.style.display ='none';
+    windowCatogory.style.display = 'none';
+    balconyCatogory.style.display = 'none';
 
 }
 

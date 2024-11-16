@@ -90,7 +90,7 @@ body{
     color: var(--cadmium);
 }
 
-#open-railling{
+#open-railling,#open-gates,#open-window,#open-balcony{
     display: none;
 }
 .open-container figure{
