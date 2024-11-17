@@ -1,5 +1,5 @@
 const ps = document.querySelector('.security input')
-const cpass = 'jabj'
+const cpass = 'iron'
 const security = document.querySelector('#security')
 
 
@@ -11,17 +11,27 @@ const gateCatogory = document.getElementById('open-gates')
 const windowCatogory = document.getElementById('open-window')
 const balconyCatogory = document.getElementById('open-balcony')
 
+// if the allready entered the password 
+window.onload = ()=>{
+    let verifiedPs =  localStorage.getItem('password')
+    if(verifiedPs===cpass)
+        verified()
+}
 
 // security script
 document.querySelector('#security-button').addEventListener('click',()=>{
     const checkPS = ps.value.trim().toLowerCase()
     if(checkPS===cpass){
-        security.style.display = 'none'
-        nav.style.display = 'block'
-        gridMenu.style.display = 'grid'
-
+        verified()
+        localStorage.setItem('password',cpass)
     }
 })
+// password verified
+function verified(){
+    security.style.display = 'none'
+    nav.style.display = 'block'
+    gridMenu.style.display = 'grid'
+}
 
 
 // for Railling -design opening box
